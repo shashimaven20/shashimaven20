@@ -1,16 +1,18 @@
-public record shashi_sharma(
+```java
+public record ShashiSharma(
     String role,
     String email,
     String linkedin,
     List<String> techStack
 ) {
 
-    public static shashi_sharma getDeveloper() {
-        return new shashi_sharma(
+    public static ShashiSharma getDeveloper() {
+        return new ShashiSharma(
             "BACKEND ENGINEER",
             "shashimaven2.0@gmail.com",
-            "[🔗 LinkedIn: [shashi-sharma](https://www.linkedin.com/in/shashi-kumar-sharma-67a843144/)",
+            "https://www.linkedin.com/in/shashi-kumar-sharma-67a843144/",
             List.of("Java", "Spring Boot", "Redis", "Kafka", "Docker")
         );
     }
+
 }
