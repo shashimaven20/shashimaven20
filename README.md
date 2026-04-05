@@ -1,16 +1,16 @@
-## Hi there 👋
+public record shashi_sharma(
+    String role,
+    String email,
+    String linkedin,
+    List<String> techStack
+) {
 
-<!--
-**shashimaven20/shashimaven20** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    public static shashi_sharma getDeveloper() {
+        return new shashi_sharma(
+            "BACKEND ENGINEER",
+            "shashimaven2.0@gmail.com",
+            "[🔗 LinkedIn: [shashi-sharma](https://www.linkedin.com/in/shashi-kumar-sharma-67a843144/)",
+            List.of("Java", "Spring Boot", "Redis", "Kafka", "Docker")
+        );
+    }
+}
